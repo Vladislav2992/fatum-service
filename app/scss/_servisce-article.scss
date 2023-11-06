@@ -1,0 +1,42 @@
+.servisce-article {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    background: $color-2;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    p {
+        max-height: 65px;
+        overflow: hidden;
+    }
+}
+
+.service-article__text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    .learn-more {
+        margin-top: 30px;
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 880px) {
+    .servisce-article {
+        grid-template-columns: 1fr;
+    }
+    .service-article__text {
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+}
+

@@ -1,0 +1,40 @@
+.desinfection-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    p{
+        margin-bottom: 30px;
+    }
+
+    ul {
+        list-style: disc;
+        padding: 10px;
+
+        li {
+            padding-left: 10px;
+            margin-left: 10px;
+        }
+    }
+
+    h3 {
+        font-size: 20px;
+        color: $color-4;
+        margin-bottom: 30px;
+    }
+}
+
+.article__title {
+    font-family: 'Gilroy';
+    font-size: calc(24px + 12 * (100vw / 1200));
+    font-weight: 400;
+    line-height: 120%;
+    color: $color-4;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 890px) {
+    .desinfection-articles {
+        grid-template-columns: 1fr;
+    }
+}

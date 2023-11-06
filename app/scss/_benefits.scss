@@ -1,0 +1,29 @@
+.benefits {
+    .section__title span {
+        font-weight: 400;
+    }
+}
+
+.benefits-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(30px + 40 * (100vw / 1200));
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+@media (max-width: 888px) {
+    .benefits-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit:nth-child(2) {
+        grid-row: 1/2;
+    }
+
+}

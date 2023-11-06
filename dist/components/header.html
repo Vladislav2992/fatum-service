@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+    <body>
+
+        <header class="header">
+            <div class="container">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo-wrapper">
+                    <a href="index.html"><img src="images/logo.svg" alt="Ftum Service" class="header__logo logo"></a>                        
+                </div>
+                <nav class="header__menu">                 
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="services.html">Услуги</a></li>
+                        <li class="menu__item"><a href="prices.html">Цены</a></li>
+                        <li class="menu__item"><a href="anti-covid19.html">Дезинфекция от COVID-19</a></li>
+                        <li class="menu__item"><a href="about-us.html">О Нас</a></li>
+                        <li class="menu__item"><a href="vacancies.html">Вакансии</a></li>
+                        <li class="menu__item"><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <label class="header__search" for="search-input"><input type="text" id="search-input" class="search-input" placeholder="Поиск" ></label>
+                    <div class="header__contacts">
+                        <a href="tel:+78126350862"><span class="city-code">+7 812 </span> <span>635-08-62</span> </a>
+                        <div class="header__social">
+                            <a href="#!" class="header__link"><img src="images/phone.svg" alt=""></a>
+                            <a href="#!" class="header__link"><img src="images/telegram.svg" alt=""></a>
+                            <a href="#!" class="header__link"><img src="images/whatsapp.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="social__items">
+                        <a href="#!" class="social__link">
+                            <img src="images/telegram2.svg" width="27" height="27" alt="">
+                        </a>
+
+                        <a href="#!" class="social__link">
+                            <svg width="27" height="27" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.5.248c-7.18 0-13 5.82-13 13s5.82 13 13 13 13-5.82 13-13-5.82-13-13-13zm-2.859 6.108c.74-.033.976-.042 2.859-.042h-.002c1.883 0 2.119.009 2.858.042.738.034 1.243.15 1.685.322a3.39 3.39 0 011.227.8c.386.385.623.772.8 1.228.171.44.288.945.323 1.683.033.74.042.976.042 2.859s-.01 2.119-.042 2.858c-.035.738-.152 1.242-.322 1.683a3.405 3.405 0 01-.8 1.228 3.392 3.392 0 01-1.228.8c-.441.172-.945.288-1.684.322-.74.034-.975.042-2.858.042s-2.119-.008-2.859-.042c-.738-.034-1.242-.15-1.683-.322a3.395 3.395 0 01-1.227-.8 3.398 3.398 0 01-.8-1.228c-.171-.441-.288-.945-.322-1.683-.034-.74-.042-.975-.042-2.858s.009-2.12.042-2.86c.033-.737.15-1.241.322-1.682.177-.456.414-.843.8-1.228a3.395 3.395 0 011.228-.8c.441-.171.945-.288 1.683-.322z" fill="#23B6F5"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12.879 7.564h.622c1.85 0 2.07.007 2.801.04.676.03 1.043.144 1.288.239.323.125.554.275.796.518.243.243.393.474.52.797.094.245.207.611.238 1.287.033.731.04.95.04 2.801 0 1.85-.007 2.07-.04 2.801-.031.676-.144 1.043-.239 1.287a2.143 2.143 0 01-.519.797 2.144 2.144 0 01-.796.518c-.244.095-.612.208-1.288.239-.73.033-.95.04-2.801.04-1.852 0-2.071-.007-2.802-.04-.676-.031-1.043-.144-1.288-.24a2.147 2.147 0 01-.797-.518 2.15 2.15 0 01-.519-.796c-.095-.245-.208-.611-.238-1.287-.034-.731-.04-.951-.04-2.803 0-1.851.006-2.07.04-2.8.03-.676.143-1.043.238-1.288.126-.323.276-.554.52-.797.242-.243.473-.393.796-.519.245-.095.612-.208 1.288-.239.64-.029.887-.037 2.18-.039v.002zm4.32 1.15a.832.832 0 100 1.665.832.832 0 000-1.665zm-7.257 4.534a3.56 3.56 0 117.121 0 3.56 3.56 0 01-7.121 0z" fill="#23B6F5"/><path d="M13.499 10.936a2.311 2.311 0 110 4.622 2.311 2.311 0 010-4.622z" fill="#23B6F5"/></svg>
+                        </a>
+
+                        <a href="#!" class="social__link">
+                            <svg width="27" height="27" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M26.5 13.254c0 7.176-5.817 12.994-12.994 12.994h-.012C6.317 26.248.5 20.43.5 13.254v-.006c0-7.18 5.82-13 13-13s13 5.82 13 13v.006zm-9.558-1.161c.723.168 1.397.51 1.858 1.027.461.517.7 1.22.7 2.098 0 .64-.109 1.21-.342 1.695a3.47 3.47 0 01-.942 1.215c-.467.38-.98.674-1.538.835a7.647 7.647 0 01-2.13.285H9.5v-13h4.465c.911 0 1.6.043 2.07.115.47.072.91.23 1.32.462.445.248.775.58.995.996.22.416.325.896.325 1.439 0 .63-.16 1.19-.463 1.68a2.823 2.823 0 01-1.27 1.084v.069zM12.898 8.61h-.297v2.794h.472c.44 0 .77-.02.993-.034l.128-.008c.214-.011.435-.096.663-.206.25-.121.422-.29.517-.503a1.84 1.84 0 00.141-.745c0-.209-.051-.423-.154-.643a.952.952 0 00-.479-.478 1.912 1.912 0 00-.73-.156c-.28-.008-.698-.02-1.254-.02zm2.584 7.936c.283-.127.49-.313.621-.56.13-.245.196-.524.196-.836 0-.399-.078-.711-.233-.937-.156-.225-.39-.397-.7-.512-.19-.075-.45-.12-.78-.13a52.47 52.47 0 00-1.33-.018h-.655v3.33h.247c.593 0 1.052-.026 1.378-.044.12-.007.222-.013.306-.016.311-.012.628-.133.95-.277z" fill="#23B6F5"/></svg>
+                        </a>
+                    </div>          
+                </nav>
+
+                
+            </div>
+        </header>
+       

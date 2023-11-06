@@ -1,0 +1,239 @@
+.clining__description {
+    ul {
+        list-style: disc;
+
+        li {
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+.prices-page {
+    h1 {
+        margin-bottom: calc(30px + 35 * (100vw / 1200));
+    }
+
+    .btn {
+        margin: 10px;
+    }
+}
+
+.prices-cotainer {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+
+.prices {
+    margin-bottom: 36px;
+}
+.price {
+    width: 190px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: $color-4;
+    align-items: center;
+    text-align: center;
+}
+._white {
+    background-color: $color-2;
+}
+
+._full-width {
+    width: 100%;
+}
+
+.conditions {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.include {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 20px;  
+    margin-bottom: 40px;   
+}
+
+.clining-include-wrapper {
+    ul {
+        list-style: disc;  
+        margin-bottom: 20px;     
+    }
+    li {
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+}
+
+.clining-include__title {
+    display: inline-block;
+    width: 230px;
+    font-size: 20px;
+    color: $color-1;position: relative;
+    margin-bottom: 20px; 
+    line-height: 150%;  
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        background: url('../images/checked.svg') no-repeat;
+        transition: .3s;
+    }
+    &:hover {
+        color: #1a80ac;
+    }    
+}
+
+.clining-include {
+    margin-bottom: 20px;
+    transition: .3s;
+
+    .clining-include__descroption {
+        visibility: hidden;  
+        height: 0;
+        transition: .3s;  
+    }
+    &.active .clining-include__descroption {
+        visibility: visible;  
+        height: 100%;
+    }
+    &.active .clining-include__title::after {
+        transform: rotate(-180deg);
+    }
+}
+
+.clining-title {
+    font-size: 20px;
+    color: $color-4;
+    margin-bottom: 30px;
+}
+
+.clining-for {
+margin-bottom: 40px;
+display: flex;
+gap: 20px;
+
+    input {
+        display: none;
+
+        &:checked + .clining-for_input {
+            border-color: $color-1;
+            color: $color-1;
+        }
+
+        &:checked + .clining-for_input::before {
+            background-color: $color-1;            
+        }
+    }
+}
+
+.clining-for_input {
+    border: 2px solid $color-5;
+    border-radius: 100px;
+    color: $color-5;
+    padding: 10px 21px;
+    margin-left: 25px;
+    position: relative;
+    transition: .3s;
+    width: fit-content;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -22px;
+        top: 12px;
+        width: 16px;
+        height: 16px;
+        background: $color-5;
+        border-radius: 6px;
+        transition: .3s;
+    }
+}
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    p {
+        width: 200px;
+    }
+}
+
+@media (max-width: 786px) {
+    .prices {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    ._full-width {
+        height: 100%;
+    }
+    .conditions {
+        flex-direction: column;
+    }
+    
+    
+}
+
+@media (max-width: 640px) {
+    .price {
+        width: 150px;
+    }
+
+    .include {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .clining-for {
+        flex-direction: column; 
+    }
+    .contact-us {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 520px) {
+    .price {
+        width: 120px;
+    }
+
+    .clining .main__title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 420px) {
+    .price {
+        width: 100px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .price {
+        width: 90px;
+        gap: 5px;
+    }
+
+    .clining .main__title {
+        font-size: 32px;
+    }
+}

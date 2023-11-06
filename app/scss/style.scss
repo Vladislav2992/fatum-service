@@ -1,0 +1,129 @@
+$color-1: #23B6F5;
+$color-2: #FFFFFF;
+$color-3: #606883;
+$color-4: #424A61;
+$color-5: #ADACB8;
+$color-6: #EAE9EE;
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Gilroy';
+    font-size: 15px;
+    line-height: 140%;
+    color: $color-3;
+    background-color: #F8F8F8;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a.btn {
+    display: inline-block;
+    width: fit-content;
+}
+
+.btn {
+    color: $color-2;
+    padding: 23px 50px;
+    background-color: $color-1;
+    border: none;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: .3s;
+    width: fit-content;
+
+    &:hover {
+        background-color: #1688b8;
+    }
+}
+
+._transparent {
+    padding: 20px 40px;
+    background-color: transparent;
+    border: 2px solid $color-4;
+    color: $color-4;
+    margin-bottom: 40px;
+
+    &:hover {
+        background-color: $color-4;
+        color: $color-2;
+        border-color: $color-4;
+    }
+}
+
+svg path {
+    transition: .3s;
+}
+
+section {
+    margin-bottom: calc(60px + 70 * (100vw / 1200));
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.main__title {
+    font-family: 'Montserrat';
+    font-size: calc(36px + 29 * (100vw / 1200));
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $color-4;
+}
+
+.section__title {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: calc(24px + 12 * (100vw / 1200));
+    line-height: 100%;
+    font-weight: 700;
+    margin-bottom: calc(30px + 20 * (100vw / 1200));
+    max-width: 410px;
+}
+
+.section__subtitle {
+    font-size: 20px;
+    color: $color-4;
+}
+
+.bread-crumbs {
+    margin-bottom: 60px;
+}
+
+.social__items {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    & svg:hover path {
+        fill: #1688b8;
+    }
+}
+
+
+@media (max-width: 786px) {
+    .section__title {
+        text-transform: none;
+    }
+}

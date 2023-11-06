@@ -1,0 +1,28 @@
+.swiper-wrapper {
+    height: auto;
+}
+
+.swiper-buttons {
+    background: $color-1;
+    width: 136px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+        width: 2px;
+        height: 15px;
+        background: #fff;
+        border-radius: 8px;
+    }
+}
+
+.swiper-button-disabled {
+    opacity: .5;
+}
+
+

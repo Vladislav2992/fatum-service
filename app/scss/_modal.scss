@@ -1,0 +1,49 @@
+.modal__form-wrapper {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    height: auto;
+    z-index: 100;
+    border-radius: 26px;
+    background: rgba(248, 248, 248, 0.70);
+    box-shadow: 0px 4px 30px 0px rgba(0, 33, 82, 0.10);
+    backdrop-filter: blur(26px);
+    padding: 50px 30px;
+    transform: translateY(-120%);
+    visibility: hidden;
+    transition: .3s;
+
+
+    &.active {
+        transform: translateY(0%);
+        visibility: visible;
+    }
+}
+
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    text-align: center;
+    
+    .btn {
+        margin: 0;
+    }
+
+    textarea {
+        resize: none;
+    }
+}
+
+.close-button {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    cursor: pointer;
+}

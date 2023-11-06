@@ -1,0 +1,45 @@
+.advices-wrapper {
+    display: flex;
+    gap: 40px;
+    
+}
+
+.advice {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 100%;
+        margin-bottom: 31px;
+    }
+
+    p {
+        height: 70px;
+        overflow: hidden;
+        margin-bottom: 31px;
+    }
+}
+
+.advice__title {
+    font-size: 20px;
+    color: $color-4;
+    margin-bottom: 31px;
+}
+
+
+.learn-more {
+    color: $color-1;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    transition: .3s;
+
+    &:hover {
+        color: #1a80ac;
+        gap: 5px;
+    }
+
+    &:hover svg path {
+        stroke: #1a80ac;
+    }
+}
