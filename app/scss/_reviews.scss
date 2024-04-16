@@ -1,0 +1,19 @@
+.reviews__header {
+    display: grid;
+    grid-template-columns: auto 400px;
+    gap: 20px;
+    margin-bottom: clamp(30px, 7vw, 65px);
+}
+#bage {
+    width: 100%;
+    height: 270px;
+}
+.reviews__companies,
+.reviews__persons {
+    position: relative;
+}
+@media(max-width:790px) {
+    .reviews__header {
+        grid-template-columns: 1fr;
+    }
+}
